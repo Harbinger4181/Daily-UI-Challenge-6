@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+}
+
+.page{
+    background-color: aqua;
+    width: 75%;
+    height: 150vh;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+}
+
+.profile-background{
+    background-color: blue;
+    position: relative;
+    grid-area: 1/1/2/3;
+}
+
+.profile-picture{
+    background-color: lime;
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    position: absolute;
+    bottom: -100px;
+    left: 100px
+}
+
+.bio{
+    grid-area: 2/1/4/2;
+    background-color: black;
+}
+
+.gallery{
+    position: fixed;
+    right: 0px;
+    margin-right: 20px;
+    background-color: red;
+    height: 95vh;
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.profile-posts{
+    grid-area: 2/2/5/3;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-1{
+    background-color: white;
+    height: 400px;
+    width: 90%;
+    margin: 20px;
+    min-height: 400px;
+}
+
+.post-2{
+    background-color: white;
+    height: 400px;
+    width: 90%;
+    margin: 20px;
+    min-height: 400px;
+}
